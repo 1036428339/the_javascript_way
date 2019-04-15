@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a;
+    console.log(a);//undefined 未定义
+    a = 3.14;
+    console.log(a);//3.14
+    a += 1;
+    console.log(a);//4.1400000000001
+
+    let num1 = 0;
+    {
+        //块级作用域
+        num1 = 1;
+        const num2 = 0;
+    }
+    console.log(num1);
+    // console.log(num2);//num2 is not defined 找不到
+
+    const b = 2;
+    console.log(b);//2
+    // b = 1;// Assignment to constant variable 常量不能赋值
+    console.log(b);
+    
+    let e = '中国';
+    const c = `我喜欢${e}`;
+    console.log(c);//我喜欢中国
+
+    let x = 1;
+    let y = 2;
+    let sum = `x + y = ${x + y}`;
+    console.log(sum);//x + y = 3
+
+    const g = 'five' * 2 ;
+    console.log(g);//NaN 不是一个数字
+
+    const h = '5';
+    console.log(h + 1);//"51" 隐式数据转换
+    const i = Number('5')
+    console.log(i + 1);//6 强制数据转换
+    
+    // const name = prompt('输入姓名:');
+    // alert(`Hello,${name}`);
+    // console.log('hello '+name);
+
+    // const input = prompt('输入数字:');
+    // console.log(typeof input);//string
+    // console.log(typeof Number(input));//number
+
+    // const r = 5.5;
+    // const pi = 3.14;
+    // const z = 2 * r * pi;
+    // console.log(z);
+    
+
+    </script>
+</body>
+</html>
